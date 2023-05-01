@@ -20,8 +20,6 @@ RUN aws configure set aws_access_key_id AKIAQ6FRJAW6YWBOM5UT && \
 # Assume IAM Role and save credentials to a file
 RUN aws sts assume-role --role-arn arn:aws:iam::064796296637:role/S3AdminRole --role-session-name docker-container > /tmp/assumed-role
 
-# Copy your application code to the container
-COPY . /app
 
 # Set the working directory to /app
 WORKDIR /app
