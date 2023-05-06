@@ -11,8 +11,8 @@ RUN yum -y install python3
 # Install Git 
 RUN yum install git -y
 
-RUN aws configure set aws_access_key_id AKIAQ6FRJAW6YWBOM5UT && \
-    aws configure set aws_secret_access_key 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 && \
+RUN aws configure set aws_access_key_id AKIAQ6FR && \
+    aws configure set aws_secret_access_key 75GkaGbBMkOk2cqubPi3 && \
     aws configure set default.region ap-south-1 && \
     aws configure set default.output json
 
